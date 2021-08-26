@@ -11,7 +11,7 @@ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:alpine \
   || (bundle init && bundle install)
 ```
 
-## Docker 
+## Docker
 
 Build docker image `jekyll-theme-n13org`
 
