@@ -25,5 +25,8 @@ docker build -t jekyll-theme-n13org .
 Run the docker image `jekyll-theme-n13org` as container with the name `jekyll-theme-n13org-builder` as interactve shell. To exit the shell just type `exit`.
 
 ```shell
-docker run --rm -it --name jekyll-theme-n13org-builder -v "$PWD":/usr/src/app jekyll-theme-n13org /bin/sh
+docker run --rm -it \
+  --name jekyll-theme-n13org-builder \
+  -v "$PWD":/usr/src/app \
+  jekyll-theme-n13org /bin/sh
 ```
