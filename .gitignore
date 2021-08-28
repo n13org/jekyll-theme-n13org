@@ -3,11 +3,14 @@ node_modules/
 
 # gem / bundler / rubygems
 .bundle/
-vendor/bundle
+Gemfile.lock
+vendor/bundle/
 lib/bundler/man/
 
 # jekyll
+*.gem
 .jekyll-cache/
+.sass-cache/
 _site/
 jekyll-theme-n13org/_site/
 
