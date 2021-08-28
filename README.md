@@ -1,6 +1,6 @@
 # jekyll-theme-n13org
 
-A Jekyll theme based on zurb foundation-sites
+A [Jekyll](https://jekyllrb.com) theme based on [zurb foundation-sites](https://get.foundation/sites)
 
 ## First Time Setup - Create the Gemfile and Gemfile.lock
 
