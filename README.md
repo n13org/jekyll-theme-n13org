@@ -5,7 +5,10 @@ A Jekyll theme based on zurb foundation-sites
 ## First Time Setup - Create the Gemfile and Gemfile.lock
 
 ```shell
-docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:alpine \
+docker run --rm \
+  -v "$PWD":/usr/src/app \
+  -w /usr/src/app \
+  ruby:alpine \
   test -f Gemfile \
   && echo "Gemfile already exits" \
   || (bundle init && bundle install)
