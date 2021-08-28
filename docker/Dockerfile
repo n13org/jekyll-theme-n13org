@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/ruby
-FROM ruby:3.0.2-alpine3.14
+FROM <%= @meta.base_image %>
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -12,5 +12,7 @@ WORKDIR /usr/src/app
 
 # Copy Gemfile and Gemfile.lock
 COPY Gemfile Gemfile.lock ./
+
+RUN gem install jekyll
 
 RUN bundle install

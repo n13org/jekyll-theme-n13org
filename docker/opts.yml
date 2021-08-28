@@ -1,0 +1,2 @@
+# base_image: ruby:2.7.1-alpine3.11
+base_image: ruby:3.0.2-alpine3.14
