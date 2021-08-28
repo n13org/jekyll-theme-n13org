@@ -11,6 +11,6 @@ WORKDIR /usr/src/app
 # RUN test -f Gemfile && echo "Gemfile already exits" || (bundle init && bundle install)
 
 # Copy Gemfile and Gemfile.lock
-COPY Gemfile Gemfile.lock .
+COPY Gemfile Gemfile.lock ./
 
 RUN bundle install
